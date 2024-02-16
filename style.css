@@ -11,6 +11,20 @@ body {
     grid-column: 2 / 4;
 }
 
+.header-row:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.user-info {
+    display: grid;
+    grid-template: 2fr 3fr / 1fr 4fr;
+}
+
+.user-info > img {
+    grid-row: 1 / -1;
+}
+
 .sidebar {
     grid-row: 1 / -1;
     display: grid;
