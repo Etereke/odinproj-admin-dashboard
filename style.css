@@ -9,10 +9,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: grid;
-    grid-template: 150px 1fr / minmax(min-content, 350px) 1fr 300px;
     min-height: 100vh;
     font-family: Roboto, sans-serif;
+
+    display: grid;
+    grid-template: 150px 1fr / minmax(min-content, 350px) 1fr 300px;
 }
 
 img {
@@ -22,7 +23,6 @@ img {
 /* * * * * * */
 /*  Header  */
 /*  * * * * */
-
 .header {
     grid-column: 2 / 4;
 
@@ -53,13 +53,13 @@ img {
 
 .header .first-row input {
     width: 75%;
-    margin-right: auto;
     appearance: none;
-    border: none;
     background-color: var(--main-bgr-color);
     height: 2rem;
-    border-radius: 15px;
     padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: auto;
 }
 
 .header .first-row img:last-of-type {
@@ -74,7 +74,7 @@ img {
 
 .user-info {
     display: grid;
-    grid-template: 2fr 3fr / 50px 4fr;
+    grid-template: 2fr 3fr / 50px 1fr;
     align-items: center;
     column-gap: 20px;
     font-weight: bold;
@@ -107,11 +107,11 @@ img {
 }
 
 .header-buttons button {
+    width: 100px;
+    height: 35px;
     background-color: var(--sidebar-color);
     color: white;
     border: none;
-    width: 100px;
-    height: 35px;
     border-radius: 20px;
 }
 
@@ -178,6 +178,7 @@ img {
     background-color: white;
     border-left: 8px solid var(--card-border-color);
     border-radius: 8px;
+    
     position: relative;
 }
 
@@ -195,6 +196,7 @@ img {
     position: absolute;
     bottom: 20px;
     right: 30px;
+
     display: flex;
     gap: 25px;
 }
