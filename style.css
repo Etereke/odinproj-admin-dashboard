@@ -1,0 +1,26 @@
+:root {
+
+}
+
+body {
+    display: grid;
+    grid-template: 400px 1fr / 300px 1fr 300px;
+}
+
+.header {
+    grid-column: 2 / 4;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    display: grid;
+    
+}
+
+.main-content {
+
+}
+
+.side-content {
+
+}
